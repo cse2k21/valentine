@@ -25,7 +25,7 @@ function App() {
 
     useEffect(() => {
         playMusic();
-    }, []);
+    }, [audioRef]);
 
     return (
         <AudioProvider audioRef={audioRef}>
