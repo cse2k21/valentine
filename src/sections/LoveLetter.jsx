@@ -23,7 +23,7 @@ const LoveLetter = () => {
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        className='bg-white p-6 md:p-8 rounded-lg shadow-2xl w-[70dvw] h-[70dvh] mx-auto flex flex-col justify-between '
+                        className='bg-white p-6 md:p-8 rounded-lg shadow-2xl w-[70dvw] h-[70dvh] min-h-fit mx-auto flex flex-col justify-between '
                     >
                         <h2 className='font-dancing text-3xl text-deep-red mb-6'>
                             My Dearest Rasmalai,

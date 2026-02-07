@@ -5,6 +5,8 @@ import { useAudio } from '../contexts/AudioContext';
 const ProposalVideo = () => {
     const videoRef = useRef(null);
     const { pauseMusic, playMusic } = useAudio();
+    const videoSrc = new URL('/assets/vid.mp4', import.meta.url).href;
+    console.log('videoSrc', videoSrc);
 
     const handlePlay = () => {
         pauseMusic();
@@ -45,7 +47,7 @@ const ProposalVideo = () => {
                     onPlay={handlePlay}
                     onPause={handlePause}
                 >
-                    <source src='/assets/vid.mp4' type='video/mp4' />
+                    <source src={videoSrc} type='video/mp4' />
                     Your browser does not support the video tag.
                 </video>
             </motion.div>
