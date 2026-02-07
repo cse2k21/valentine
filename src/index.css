@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@400;600&family=Playfair+Display:wght@400;700&family=Playwrite+CU:wght@100..400&family=Playwrite+Cuba+Guides&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        @apply font-inter bg-soft-pink text-gray-800;
+    }
+}
